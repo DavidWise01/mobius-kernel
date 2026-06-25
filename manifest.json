@@ -1,0 +1,38 @@
+{
+  "name": "11+1 Mobius Kernel",
+  "structure": "5 0 0 5",
+  "meaning": {
+    "11+1": "twelve-frame coherence stripped to eleven active plus one reference",
+    "5 0 0 5": "five active left, internal zero, external zero, five active right",
+    "mobius_stack": "five Mobius strips stacked between internal zero and external zero"
+  },
+  "tests": [
+    {
+      "run": "mobius_normal_144",
+      "cycles": 144,
+      "avg_stability": 0.71405,
+      "min_stability": 0.5601,
+      "final_stability": 0.78025,
+      "avg_strip_health": 0.37445,
+      "final_strip_health": 0.25238
+    },
+    {
+      "run": "mobius_noise_ramp_144",
+      "cycles": 144,
+      "avg_stability": 0.70936,
+      "min_stability": 0.56056,
+      "final_stability": 0.759,
+      "avg_strip_health": 0.39045,
+      "final_strip_health": 0.28374
+    },
+    {
+      "run": "mobius_pressure_144",
+      "cycles": 144,
+      "avg_stability": 0.79549,
+      "min_stability": 0.55956,
+      "final_stability": 0.85038,
+      "avg_strip_health": 0.15372,
+      "final_strip_health": 0.00671
+    }
+  ]
+}

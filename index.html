@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>11+1 Möbius Kernel</title>
+<style>
+:root{--bg:#050009;--ink:#f8f3ff;--muted:#b9a9d3;--line:rgba(224,190,255,.22);--violet:#9b5cff;--pink:#ff38e8;--cyan:#57e7ff;--gold:#ffd166}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 70% 12%,rgba(155,92,255,.25),transparent 32rem),linear-gradient(135deg,#020105,#080012 52%,#000);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:clamp(24px,5vw,72px)}h1{font-size:clamp(54px,9vw,116px);line-height:.84;letter-spacing:-.08em;text-transform:uppercase;margin:0 0 24px}.grad{background:linear-gradient(105deg,#fff,#eadbff 24%,var(--violet) 50%,var(--pink) 76%,var(--cyan));-webkit-background-clip:text;color:transparent}p{color:#cbbfe2;line-height:1.65;font-size:18px}.viz{position:relative;width:min(72vw,620px);aspect-ratio:1;display:grid;place-items:center}.zero{position:absolute;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#050009;box-shadow:0 0 40px rgba(87,231,255,.25)}.zi{left:38%;top:44%;box-shadow:0 0 50px rgba(87,231,255,.35)}.ze{right:12%;top:44%;box-shadow:0 0 50px rgba(255,56,232,.3)}.strip{position:absolute;width:72%;height:18%;border-radius:50%;border:3px solid rgba(87,231,255,.35);transform:rotate(var(--r)) scaleY(.45);box-shadow:0 0 28px rgba(87,231,255,.16),inset 0 0 28px rgba(255,56,232,.08);animation:spin 14s linear infinite}.strip:nth-child(1){--r:0deg}.strip:nth-child(2){--r:36deg}.strip:nth-child(3){--r:72deg}.strip:nth-child(4){--r:108deg}.strip:nth-child(5){--r:144deg}.strip:after{content:"";position:absolute;left:48%;top:-8px;width:18px;height:18px;border-radius:50%;background:var(--gold);box-shadow:0 0 24px var(--gold)}.layout{display:flex;gap:10px;align-items:center;margin-top:26px;flex-wrap:wrap}.cell{border:1px solid var(--line);border-radius:18px;padding:16px 18px;background:rgba(255,255,255,.05);min-width:70px;text-align:center;font-weight:800}main{padding:40px clamp(24px,5vw,72px)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:24px;padding:20px;background:rgba(255,255,255,.05)}.metric{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08);padding:8px 0;color:var(--muted)}.metric b{color:white}@keyframes spin{to{transform:rotate(calc(var(--r) + 360deg)) scaleY(.45)}}@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<section class="hero">
+<div>
+<h1><span class="grad">11 + 1</span><br>Möbius Kernel</h1>
+<p>Stripped down to the core frame: <b>5 0 0 5</b>. Five active channels, one internal zero point, one external zero point, five active channels. Five Möbius strips stack between the two zero points.</p>
+<div class="layout"><div class="cell">5</div><div class="cell">0</div><div class="cell">0</div><div class="cell">5</div></div>
+</div>
+<div class="viz">
+<div class="strip"></div><div class="strip"></div><div class="strip"></div><div class="strip"></div><div class="strip"></div>
+<div class="zero zi">0<br><small>IN</small></div><div class="zero ze">0<br><small>OUT</small></div>
+</div>
+</section>
+<main>
+<section class="grid">
+<article class="card"><h3>mobius_normal_144</h3><div class="metric"><span>avg stability</span><b>0.71405</b></div><div class="metric"><span>min stability</span><b>0.5601</b></div><div class="metric"><span>strip health</span><b>0.25238</b></div></article><article class="card"><h3>mobius_noise_ramp_144</h3><div class="metric"><span>avg stability</span><b>0.70936</b></div><div class="metric"><span>min stability</span><b>0.56056</b></div><div class="metric"><span>strip health</span><b>0.28374</b></div></article><article class="card"><h3>mobius_pressure_144</h3><div class="metric"><span>avg stability</span><b>0.79549</b></div><div class="metric"><span>min stability</span><b>0.55956</b></div><div class="metric"><span>strip health</span><b>0.00671</b></div></article>
+</section>
+</main>
+</body></html>
