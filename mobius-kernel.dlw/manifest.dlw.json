@@ -1,0 +1,11 @@
+{
+  "badge": "DLW-MOBIUS_KERNEL",
+  "name": "THE 11+1 MOBIUS KERNEL",
+  "universe": "IDIOS",
+  "moniker": "⟦THE 11+1 MOBIUS KERNEL:mobius-kernel:241312⟧",
+  "architect": "David Lee Wise (ROOT0) / Bridge-Burners LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "seal_sha256": "241312d01d7f928652faf281e23377847ec6f17c8aeba48725be34faf87adbeb",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}
