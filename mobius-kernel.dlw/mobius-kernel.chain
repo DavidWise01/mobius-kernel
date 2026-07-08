@@ -1,0 +1,9 @@
+ROOT0-DLW-CHAIN-v1
+index : 1130
+slug  : mobius-kernel
+seal  : 241312d01d7f928652faf281e23377847ec6f17c8aeba48725be34faf87adbeb
+prev  : 997c3fc5bbb97cf69d8f93bb929b55254e5b4725616cd6a6b091b9bc0dcc260c
+link  : 6ecc90317ef24b458665d34c815718584c3df31d020cf5dd350b58f764d2077e
+head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+
+— the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
